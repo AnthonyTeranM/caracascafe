@@ -25,6 +25,16 @@ h2 {
     font-size: 63px;
 }
 
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 p {
     text-align: justify;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -97,7 +107,7 @@ ul li {
 }
 
 .redessociales {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -183,4 +193,60 @@ textarea {
 
 #boton:hover {
     cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .pindex {
+        text-align: justify;
+    }
+
+    .imgindex {
+        width: 350px;
+    }
+
+    .barra li {
+        width: 100px;
+    }
+
+    .gallery-img {
+        width: 145px;
+        height: 145px;
+        padding: 80px;
+    }
+
+    .gallery-container {
+        grid-template-columns: min-content;
+        padding: 60px;
+    }
+
+    .formulario {
+        width: 300px;
+    }
+
+    .ubicacion {
+        width: 330px;
+        height: 330px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .imgnosotros {
+        width: 350px;
+    }
+
+    .redessociales {
+        margin-bottom: 100px;
+    }
 }
