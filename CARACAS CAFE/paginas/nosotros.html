@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARACAS CAFE</title>
     <link rel="stylesheet" href="../clase/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 </head>
 
-<body>
-    <!--encabezados-->
-    <h1>CARACAS CAFÉ</h1>
+<body class="body-nosotros">
+    <h1 class="h1-nosotros">CARACAS CAFÉ</h1>
     <DIV class="barra">
         <nav>
             <ul>
@@ -24,8 +26,9 @@
         </nav>
     </div>
     <div>
-        <h2>Nosotros</h2>
-        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ullam aspernatur temporibus est
+        <h2 class="h2-nosotros">Nosotros</h2>
+        <P class="p-nosotros">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ullam aspernatur temporibus
+            est
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iusto ad voluptate. Impedit dicta
             ea porro! Voluptatibus ex aperiam explicabo autem sed dolore nostrum, beatae blanditiis, odit illum,
             error optio.
@@ -37,7 +40,29 @@
             ea porro! Voluptatibus ex aperiam explicabo autem sed dolore nostrum, beatae blanditiis, odit illum,
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iusto ad voluptate. Impedit dicta
         </P>
-        <img src="../img/cafetin2.jpg" alt="cafetin2" class="imgnosotros">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/cafetin1.jpg" class="d-block w-100" alt="Cafeteria-1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/cafetin2.jpg" class="d-block w-100" alt="cafeteria-2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/cafetin3.jpg" class="d-block w-100" alt="cafeteria-3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
     <footer>
         <div class="bajo">
@@ -49,6 +74,9 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
