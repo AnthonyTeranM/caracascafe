@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(147, 102, 57);
+    background: rgb(94, 37, 14);
+    background: linear-gradient(90deg, rgba(94, 37, 14, 1) 47%, rgba(68, 37, 25, 1) 92%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        text-align: center;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+        margin-top: 25px;
+        font-size: 35px;
+        color: #c4b107;
+    }
+
+    .horario {
+        width: 380px;
+        height: 380px;
+        margin-left: 350px;
+        font-size: 50xp;
+    }
+
+    .ubicacion {
+        width: 600px;
+        height: 400px;
+        margin-left: 350px;
+    }
+}
+
+h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 118px;
+    animation: animate__fadeIn;
+    animation-duration: 3s;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: rgb(143, 133, 88);
+    font-size: 63px;
+}
+
+h3 {
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(143, 133, 88);
+    font: size 30px;
+}
+
+h4 {
+    text-align: center;
+    font: size 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    color: linear-gradient(90deg, rgba(255, 255, 255, 1) 47%, rgba(255, 247, 244, 1) 92%);
+}
+
+.frases {
+    text-align: center;
+    color: #c4b107;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: size 60px;
+    margin-bottom: 20px;
+}
+
+.imgindex {
+    width: 100%;
+}
+
+.galeria {
+    height: calc(400px + 3em);
+    width: 700px;
+    margin: 1em auto;
+    border: 1px solid #555;
+    position: relative;
+    filter: drop-shadow(5px 5px 3px #3d2b14);
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 3s;
+    }
+
+    input[type=radio] {
+        position: relative;
+        bottom: calc(-400px - 1.5em);
+        margin-left: 70px;
+    }
+
+    input[type=radio]:nth-of-type(1):checked~img:nth-of-type(1) {
+        opacity: 1;
+    }
+
+    input[type=radio]:nth-of-type(2):checked~img:nth-of-type(2) {
+        opacity: 1;
+    }
+
+    input[type=radio]:nth-of-type(3):checked~img:nth-of-type(3) {
+        opacity: 1;
+    }
+
+    input[type=radio]:nth-of-type(4):checked~img:nth-of-type(4) {
+        opacity: 1;
+    }
+}
+
+.video {
+    margin-top: 80px;
+    margin-left: 350px;
+}
+
+map {
+    margin-left: 350xp;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding: 120px;
+    gap: 15px;
+
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 10px 10px 5px -7px rgba(230, 252, 145, 0.75);
+        margin-bottom: 10px;
+    }
+
+    .gallery-img:hover {
+        transform: scale(1.02);
+    }
+
+    .gallery-item {
+        position: relative;
+        margin-bottom: 40px;
+        background-color: #c4b107;
+    }
+
+    .boton:hover {
+        cursor: pointer;
+        background: #c4b107;
+    }
+
+    .galleri-tittle {
+        position: absolute;
+        bottom: 0;
+        color: rgb(10, 10, 10);
+        background-color: rgb(243, 206, 150);
+        width: 100%;
+        padding: 5px 0;
+        font-weight: 200;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, cursive;
+    }
+}
+
+.mediosdepago {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.pago {
+    width: 60px;
+    height: 60px;
+}
+
+.formulario {
+    width: 450px;
+    margin: auto;
+    background: #020202;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#boton:hover {
+    cursor: pointer;
+    background: #c4b107;
+}
+
+footer {
+    margin-bottom: 80px;
+
+    ul {
+        list-style: nome;
+    }
+
+    ul li {
+        display: inline;
+        padding-left: 60px;
+    }
+
+    .redessociales {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .bajo {
+        text-align: center;
+        list-style: 0;
+        padding: 0;
+        background: rgb(14, 11, 6);
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+
+        li {
+            display: inline-block;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 20px;
+                display: block;
+            }
+
+            a:hover {
+                background: rgb(173, 159, 78);
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px
+    }
+
+    p {
+        text-align: justify;
+        font-size: 12px
+    }
+
+    .pindex {
+        text-align: justify;
+    }
+
+    .imgindex {
+        width: 350px;
+    }
+
+    .barra li {
+        width: 100px;
+    }
+
+    .gallery-img {
+        width: 145px;
+        height: 145px;
+        padding: 80px;
+    }
+
+    .gallery-container {
+        grid-template-columns: min-content;
+        padding: 60px;
+    }
+
+    .formulario {
+        width: 300px;
+    }
+
+    .map {
+        margin: 0;
+
+        .ubicacion {
+            margin-left: 20px;
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    .imgnosotros {
+        width: 350px;
+    }
+
+    .redessociales {
+        margin-bottom: 100px;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .parent {
+        display: none;
+        grid-template-columns: none;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        text-align: center;
+
+        .div1 {
+            display: none;
+            grid-area: none;
+            width: 2px;
+            height: 2px;
+        }
+
+        .div2 {
+            grid-area: 1/ 1 / 1/ 1;
+            margin-top: 10px;
+            font-size: 10px;
+            color: #c4b107;
+            align-content: center;
+        }
+    }
+}
