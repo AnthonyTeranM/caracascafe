@@ -12,31 +12,10 @@ body {
     background: rgb(60, 6, 6);
     background: linear-gradient(90deg, rgba(60, 6, 6, 1) 0%, rgba(47, 15, 2, 1) 0%);
 
-    .parent {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 0px;
-        text-align: center;
-
-        .div1 {
-            grid-area: 1 / 1 / 2 / 2;
-        }
-
-        .div2 {
-            grid-area: 1 / 2 / 2 / 3;
-            margin-top: 25px;
-            font-size: 35px;
-            color: #c4b107;
-        }
-    }
-
     .horario {
-        width: 380px;
-        height: 380px;
-        margin-left: 350px;
-        font-size: 50xp;
+        width: 50%;
+        height: 20%;
+        margin-left: 330px;
     }
 
     .ubicacion {
@@ -96,12 +75,6 @@ body {
 
     .imgindex {
         width: 100%;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        margin-left: 10px;
-        margin-right: 10px;
     }
 
     .galeria {
@@ -251,6 +224,13 @@ body {
         .redessociales {
             margin-bottom: 50px;
             text-align: center;
+            list-style: none;
+
+            .redes {
+                li {
+                    list-style: none;
+                }
+            }
         }
 
         .bajo {
@@ -291,7 +271,7 @@ body {
         }
 
         h2 {
-            font-size: 40px
+            font-size: 30px
         }
 
         p {
@@ -299,6 +279,10 @@ body {
             font-size: 12px;
             margin-left: 20px;
             margin-right: 20px;
+        }
+
+        .horario {
+            margin-left: 100px;
         }
 
         .gallery-img {
@@ -317,7 +301,14 @@ body {
         }
 
         .imgindex {
-            width: 350px;
+            width: 100%;
+        }
+
+        .video {
+            width: 70%;
+            height: 60%;
+            margin-top: 20px;
+            margin-left: 60px;
         }
 
         .barra li {
